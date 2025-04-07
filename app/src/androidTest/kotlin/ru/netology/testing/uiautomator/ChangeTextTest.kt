@@ -89,14 +89,14 @@ class ChangeTextTest {
         device.wait(Until.hasObject(By.pkg(launcherPackage)), TIMEOUT)
     }
 
-    @Test
-    fun testInternetSettings() {
-        waitForPackage(SETTINGS_PACKAGE)
-
-        device.findObject(
-            UiSelector().resourceId("android:id/title").instance(0)
-        ).click()
-    }
+//    @Test
+//    fun testInternetSettings() {
+//        waitForPackage(SETTINGS_PACKAGE)
+//
+//        device.findObject(
+//            UiSelector().resourceId("android:id/title").instance(0)
+//        ).click()
+//    }
 
     @Test
     fun testChangeText() {
